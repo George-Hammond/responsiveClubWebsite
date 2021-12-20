@@ -1,0 +1,471 @@
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+@font-face{
+	font-family: 'Amagro';
+		src: url('../font/amagro/Amagro.ttf') format ('ttf');
+}
+/**/
+html{
+	font-size: 16px;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	box-sizing: border-box;
+	margin: 0;
+	background-color: #cac8c8;
+}
+
+/*styling header section*/
+header {
+	margin: 0;
+	width: 100%;
+	border-bottom: solid 1px #c6c1c1;
+	background-color: rgba(21, 26, 27, 0.986);
+	height:85px;
+	z-index: 100;
+  }
+  
+  header .header-section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.875rem;
+	margin: 0;
+	height: 26px;  
+  }
+
+  header nav ul{
+	  display: flex;
+	  list-style: none;
+
+  }
+
+  nav a {
+	padding: 0rem 3rem;	
+	vertical-align: bottom;
+	line-height: 1.6;
+	font-size: 1.5rem;
+	color: #cac8c8;
+	text-decoration: underline;
+  }
+
+.mobile{
+	display: none;
+}
+
+@media only screen and (max-width: 895px){
+
+	header {
+		margin: 0;
+		position: fixed;
+    	top: 0px;
+    	left: 0px;
+    	bottom:  0px;
+		width: 100%;
+		border-bottom: solid 1px #c6c1c1;
+		background-color: rgba(21, 26, 27, 1);
+		height:100px;
+		z-index: 100;
+	  }
+	  
+	  header .header-section{
+		 margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1.875rem;		 
+	  }
+
+	  header nav ul{
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		width: 17rem;
+		align-items: center;
+  
+	}
+  
+	nav a {
+	  padding: 3rem;	
+	  vertical-align: bottom;
+	  line-height: 1.6;
+	  font-size: 1.2rem;
+	  color: #cac8c8;
+	  text-decoration: none;
+	}
+
+	.desktop{
+		display: none;
+	}
+
+	.mobile{
+		display: flex;
+	}
+}
+/*styling banner section*/
+.banner-section{
+	font-family: 'Amagro';
+	background-image: url("../images/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-bottom: solid 2px #c6c1c1;
+	opacity: 0.85;
+	height: 40rem;
+	width: 80%
+	margin: 0;
+}
+
+.banner-text{
+	padding: 0 5rem 2.5rem 5rem;
+ /*   border: solid 1px #979797;
+    border-radius: 4px;*/
+	color: white;    
+    position: relative;
+    top: 4.625rem;
+    left: 10.25rem;
+    height: 22.25rem;
+	width: 15rem;
+}
+
+.banner-text h1{
+	font-size: 20rem;
+	margin: 0;
+	padding: 0;
+}
+
+.banner-text h2{
+	font-size: 9rem;
+	margin: 0;
+	padding: 0;
+	width: 45rem;
+}
+
+.banner-text h4{
+	font-size: 3rem;
+	margin: 0;
+	padding:0;
+}
+
+@media only screen and (max-width: 895px){
+
+.banner-section{
+	font-family: 'Amagro';
+	background-image: url("../images/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-bottom: solid 2px #c6c1c1;
+	opacity: 0.85;
+	height: 25rem;
+	width: 80%
+	margin: 0;
+}
+
+.banner-text{
+	padding: 0 5rem 2.5rem 5rem;
+ /*   border: solid 1px #979797;
+    border-radius: 4px;*/
+	color: white;    
+    position: relative;
+    top: 9.625rem;
+    left: 2.25rem;
+    height: 20.25rem;
+	width: 11rem;
+}
+
+.banner-text h1{
+	font-size: 6rem;
+	margin: 0;
+	padding: 0;
+}
+
+.banner-text h2{
+	font-size: 5rem;
+	margin: 0;
+	padding: 0;
+	width: 45rem;
+}
+
+.banner-text h4{
+	font-size: 2rem;
+	margin: 0;
+	padding:0;
+}
+	
+}
+
+/*styling About us Section*/
+.about-us-section{
+	display: flex;
+	width: 80%;
+	height: 40rem;
+	justify-content: space-around;
+	margin-left: 7rem;
+}
+
+.about-us-image{
+	margin-top: 7rem;
+}
+
+.about-us-image img{
+    width: 30rem;
+    height: 25rem;
+    margin-right: 2.5rem;
+  }
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    margin-top: 7rem;
+    justify-content: space-around;
+}
+
+.about-us-text h2{
+	text-align: center;
+	margin-bottom: 0;
+	font-weight: 100;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem;
+}
+
+.about-us-text p {
+    font-weight: 800;
+    font-size: 1.2rem;
+    width: 31rem;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 895px){
+
+	.about-us-section{
+		height: 19rem;
+		width: 80%;
+
+	}
+	.about-us-image{
+		display: none;
+	}
+
+	.about-us-text{
+		display: flex;
+		flex-direction: column;
+		height: 16rem;
+		margin-top: 2rem;
+	}
+
+	.about-us-section h2{
+		text-align: center;
+		margin-bottom: 0;
+		font-weight: 100;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 3rem;
+	}
+	
+	.about-us-text p{
+		font-weight: 800;
+		font-size: 0.875rem;
+		width: 33rem;
+		line-height: 1.6;
+	}
+}
+
+
+/*styling events section*/
+.event-section{
+	display: flex;
+    flex-wrap: wrap;
+    background-color: #cac8c8;
+    /*height: 34rem;*/
+    width: 80%;
+    margin-left: 7rem;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.event-section h2{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+.event-section p{
+	text-align: center;
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+.event-image-container {	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.event-image-container img {
+    width: 20rem;
+    height: 21rem;
+    padding: 0rem 1rem;
+}
+
+@media only screen and (max-width: 895px){
+	.event-image-container img {
+    width: 15rem;
+    height: 15rem;
+    padding: 0rem 1rem;
+}
+}
+/*styling charity section*/
+.charity-section {
+	background-image: url("../images/15.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 35rem;
+	border-top: solid 2px #181d1e;
+	border-bottom: solid 2px #181d1e;
+}
+
+#charity-section-banner-desktop{
+	background-color: #181d1e9f;
+	height: 18rem;
+	width: 50rem;
+	color: white;
+	position: relative;
+	top: 2rem;
+	left: 8rem;
+	text-align: center;
+	margin-right: 0;
+}
+
+#charity-section-banner-desktop h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+#charity-section-banner-desktop p{
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+#lets-donate {
+	background-color: white;
+	color: #181d1e;
+	border-radius: 5rem;
+	width: 15rem;
+	height: 2rem;
+	position: relative;
+	top: 1rem;
+	left: 19rem;
+	font-family: 'Montserrat', sans-serif;
+
+}
+#charity-section-banner-mobile{
+	display: none;
+}
+@media only screen and (max-width: 895px){
+#charity-section-banner-desktop{
+	display: none;
+}
+
+#charity-section-banner-mobile {
+    display: block;
+    color: white;
+    position: relative;
+    top: 6rem;
+    left: 12rem;
+    width: 33rem;
+    text-align: center;
+    margin: 0;
+}
+
+#charity-section-banner-mobile h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+#charity-section-banner-mobile p{
+	font-weight: 800;
+	font-size: 1.2rem;
+}
+
+#lets-donate {
+	background-color: white;
+	color: #181d1e;
+	border-radius: 5rem;
+	width: 15rem;
+	height: 2rem;
+	margin-right: 0;
+	position: relative;
+	top: 1rem;
+	left: 9rem;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+}
+@media only screen and (max-width: 728px){
+	#charity-section-banner-desktop{
+	display: none;
+}
+
+#charity-section-banner-mobile {
+    display: block;
+    color: white;
+    position: relative;
+    top: 10rem;
+    left: 0rem;
+    width: 33rem;
+    text-align: center;
+    margin-right: 0;
+}
+
+#charity-section-banner-mobile h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 2rem;
+}
+
+#charity-section-banner-mobile p{
+	font-weight: 800;
+	font-size: 1.2rem;
+	margin-right: 0;
+}
+
+#lets-donate {
+	background-color: white;
+	color: #181d1e;
+	border-radius: 5rem;
+	width: 15rem;
+	height: 2rem;
+	margin: 0;
+	position: relative;
+	top: 1rem;
+	left: 9rem;
+	font-family: 'Montserrat', sans-serif;
+
+}
+}
+
+
+/*styling the footer*/
+
+footer{
+	background-color: rgba(21, 26, 27, 0.986);
+	height: 10rem;
+	text-align: center;
+	color: #cac8c8;
+}
+
+footer p{
+padding-top: 1rem;
+margin: 0;
+}
